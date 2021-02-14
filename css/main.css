@@ -155,6 +155,13 @@ img {
   border-bottom: 1px solid #ececec;
 }
 
+.header-mobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .button {
   border-radius: 4px;
   padding: 6px 22px;
@@ -191,6 +198,18 @@ img {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.menu-button {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
 }
 
 .heading {
@@ -666,12 +685,32 @@ img {
   transform: scale(1);
   position: relative;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-close {
@@ -774,8 +813,6 @@ img {
 
 .check-text {
   position: relative;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
   padding-left: 25px;
@@ -794,6 +831,27 @@ img {
   border-radius: 3px;
   left: 0;
   top: 0;
+}
+
+@media screen and (min-width: 480px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .check-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .policy-check:checked + label::before {
@@ -839,6 +897,18 @@ img {
   .container {
     width: 1200px;
   }
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px;
+  text-align: center;
+  font-size: 20px;
 }
 
 .section {
