@@ -124,3 +124,10 @@
     border-bottom: $page-header-portfolio-border;
   }
 }
+
+.header-mobile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
