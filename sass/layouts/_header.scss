@@ -204,6 +204,12 @@
   letter-spacing: 0.02em;
   color: $accent-color;
   text-decoration: none;
+  @media screen {
+    min-width: 320px;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+  }
 }
 
 .menu-social-item {
@@ -223,6 +229,7 @@
 
 .menu-social {
   display: flex;
+  // flex-wrap: wrap;
 }
 
 .menu-container {
